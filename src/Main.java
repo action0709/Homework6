@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -56,15 +57,39 @@ public class Main {
         // Пишем код для задачи 4
         int deliveryDistance = 95;
         int deliveryDays = 1;
-        if (deliveryDistance > 20 && deliveryDistance<60) {
-            deliveryDays++;System.out.println("Потребуется дней - " + deliveryDays);
+        if (deliveryDistance > 20 && deliveryDistance < 60) {
+            deliveryDays++;
+            System.out.println("Потребуется дней - " + deliveryDays);
         }
-        if (deliveryDistance > 60 && deliveryDistance<100) { deliveryDays=deliveryDays+2;System.out.println("Потребуется дней - " + deliveryDays);} else
-
-       {
+        if (deliveryDistance > 60 && deliveryDistance < 100) {
+            deliveryDays = deliveryDays + 2;
+            System.out.println("Потребуется дней - " + deliveryDays);
+        } else {
             System.out.println("Свыше 100 км доставки нет");
         }
 
+
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        // Пишем код для задачи 5
+        int month = 12;
+
+        switch (month) {
+            case 12, 1, 2:
+                System.out.println(month + " месяц - это зима");
+                break;
+            case 3, 4, 5:
+                System.out.println(month + " месяц - это весна");
+                break;
+            case 6, 7, 8:
+                System.out.println(month + " месяц - это лето");
+                break;
+            case 9, 10, 11:
+                System.out.println(month + " месяц - это осень");
+                break;
+        }
 
 
     }
